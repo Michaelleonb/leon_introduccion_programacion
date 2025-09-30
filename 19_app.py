@@ -1,16 +1,16 @@
-# Programa: Conversión de Soles (PEN) a Dólares (USD)
+# datos de entrada
+monto = float (input(" Ingrese el monto en soles (PEN): "))
+tasa = float (input("Ingrese la tasa de cambio actual (1 USD = ? PEN): "))
 
-# 1. Solicitar al usuario el monto en soles
-monto_soles = float(input("Ingrese el monto en soles (PEN): "))
+# calcular cambio 
+cambio = monto/tasa
 
-# 2. Solicitar la tasa de cambio actual (ejemplo: 1 USD = 3.85 PEN)
-tasa_cambio = float(input("Ingrese la tasa de cambio actual (1 USD = ? PEN): "))
+#mostrar datos calculados
 
-# 3. Calcular el equivalente en dólares
-monto_dolares = monto_soles / tasa_cambio
+print ("\n---Conversión en Global Change---")
 
-# 4. Mostrar el resultado con dos decimales
-print("\n--- Conversión en Global Change ---")
-print(f"Monto en soles: S/ {monto_soles:.2f}")
-print(f"Tasa de cambio: 1 USD = S/ {tasa_cambio:.2f}PEN")
-print(f"Equivalente en dólares: $ {monto_dolares:.2f}")
+#mostrar "2.f" con dos decimales
+print (f"Monto en soles: S/.{monto:.2f}")
+print (f"Tasa de cambio: 1 USD = S/.{tasa:.2f}")
+print (f"Equivalente en dólares: ${cambio:.2f}")
+

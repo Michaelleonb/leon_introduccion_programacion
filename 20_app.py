@@ -1,9 +1,7 @@
-# Programa: Cálculo automático de tarifas para MoviExpress
-
-# 1. Solicitar la edad del pasajero
+# Datos de entrada
 edad = int(input("Ingrese la edad del pasajero: "))
 
-# 2. Determinar la tarifa usando condicional if - elif - else
+# Determinar tarifa usando condicional 
 if edad < 12:
     tarifa = 3.00
     tipo_tarifa = "Tarifa infantil"
@@ -14,7 +12,7 @@ else:
     tarifa = 2.00
     tipo_tarifa = "Tarifa especial"
 
-# 3. Mostrar el resultado formateado
+# Mostrar tarifa
 print("\n-------------------------------------------")
 print(f"Ingrese la edad del pasajero: {edad}")
 print(f"{tipo_tarifa}: S/ {tarifa:.2f}")
