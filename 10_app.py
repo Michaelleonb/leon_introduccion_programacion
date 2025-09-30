@@ -13,3 +13,4 @@ cantidad = 8
 # La variable cantidad es mayor o igual a 5
 if cantidad >=5:
     print("El valor de la variable cantidad es mayor o igual a 5")
+    
